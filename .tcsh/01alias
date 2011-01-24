@@ -1,0 +1,8 @@
+#
+# $Header: /usr/local/environment/RCS/soda.alias,v 1.3 1992/05/06 00:11:54 dwallach Exp $
+#
+
+set idlelist=`echo $watch|sed -e "s/any//g"|sort`
+alias wlog	'idle -m $idlelist'
+alias ls ls-F
+

@@ -1,0 +1,21 @@
+[core]
+    editor = /usr/bin/vim
+    pager = /usr/bin/less -R
+[user]
+    name = Geordan Rosario
+    email = geordan@doselab.com
+[color]
+    ui = auto
+[color "grep"]
+    match = normal bold
+[color "status"]
+    added = green bold
+#[branch]
+    #autosetuprebase = always
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+[push]
+    default = tracking

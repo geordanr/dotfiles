@@ -1,0 +1,17 @@
+uncomplete *
+complete cd 'p/1/d/'
+complete {g,}cc 'c/-I/d/' 'c/-L/d/'
+complete finger 'p/1/u/'
+complete idle 'p/*/u/'
+complete kill 'c/-/S/'
+complete limit 'p/*/l/'
+complete mail 'p/*/u/'
+complete nwrite 'p/*/u/'
+complete rmdir 'p/*/d/'
+complete {folder,rmm,refile,pick,repl,forw,scan,show,h} c,+,D:$HOME/Mail,
+complete ssh 'n/-l/u/' 'n/-c/(idea blowfish des 3des arcfour tss)/' n,-i,F:$HOME/.ssh/, 'p/*/`hosts`/' 
+complete unalias 'p/*/a/'
+complete unset 'p/*/s/'
+complete unsetenv 'p/*/e/'
+complete {more,less,vi} 'n/-t/`awk '\''{print $1}'\'' tags`/'
+complete pkg_delete 'p,*,F:/var/db/pkg, ,'

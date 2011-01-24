@@ -1,0 +1,41 @@
+#
+# $Id: .tcshrc,v 1.4 1998/03/12 21:35:37 geordan Exp geordan $
+#
+
+#  by default, this lets people read, but not write, your files.
+#  to make your files unreadable, by default, change this line to
+#  umask 077
+
+source ~/.cshrc
+# Since cd was aliased in .cshrc...
+unalias cd
+
+set tcshdir = ~/.tcsh
+
+set who = "Target %B%n%b %a %U%l%u from %m at %T"
+
+# this prevents program crashes from leaving large core files around,
+# which are useful if you're debugging but not otherwise.
+#limit coredumpsize 0
+
+#set prompt="%B%m%b [%n] <%T> %/%# "
+set prompt="%B%n@%m%b %T %~%# "
+set prompt3="You must have meant %B%R%b.  Right? (yep|nope|edit|auto)>"
+set autolist
+set histdup=erase
+set ignoreeof = 2
+set tperiod = 10
+
+foreach file ($tcshdir/*)
+    source $file
+end
+set watch=(0 any any)
+
+##
+# Your previous /Users/geordan/.tcshrc file was backed up as /Users/geordan/.tcshrc.macports-saved_2010-12-15_at_09:59:30
+##
+
+# MacPorts Installer addition on 2010-12-15_at_09:59:30: adding an appropriate PATH variable for use with MacPorts.
+setenv PATH /opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+

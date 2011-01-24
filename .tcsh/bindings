@@ -1,0 +1,6 @@
+bindkey -k up history-search-backward
+bindkey -k down history-search-forward
+#bindkey "\t" complete-word-fwd
+#bindkey "\e\t" complete-word-back
+bindkey "^G" kill-whole-line
+bindkey "^W" backward-delete-word
