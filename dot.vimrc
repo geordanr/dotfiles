@@ -21,6 +21,7 @@ autocmd BufNewFile,BufRead * if &ft == 'mason' | compiler mason | endif
 autocmd BufNewFile,BufRead * if &ft == 'ruby'  | compiler ruby  | endif
 autocmd BufNewFile,BufRead * if &ft == 'php'   | compiler php   | endif
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+au BufNewFile,BufRead *.cl       setf opencl 
 
 " general settings
 set noshowmode
