@@ -3,7 +3,7 @@
     pager = /usr/bin/less -R
 [user]
     name = Geordan Rosario
-    email = geordan@doselab.com
+    email = geordan@gmail.com
 [color]
     ui = auto
 [color "grep"]

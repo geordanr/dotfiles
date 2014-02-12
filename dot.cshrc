@@ -9,21 +9,14 @@
 umask 022
 
 set path = (    ~/bin \
-                 /usr/local/bin\
-                 /opt/local/bin\
-                 /usr/local/sbin \
-                 /usr/local/git/bin \
                  /bin\
                  /sbin\
                  /usr/bin\
                  /usr/sbin\
-                 /usr/X11R6/bin\
+                 /usr/local/bin\
+                 /usr/local/sbin \
+                 /opt/local/bin\
 )
-
-# ImageMagick personal install
-setenv MAGICK_HOME ~/ImageMagick-6.6.5
-setenv DYLD_LIBRARY_PATH ${MAGICK_HOME}/lib
-set path= ( $path ~/ImageMagick-6.6.5/bin )
 
 # VirtualEnv => Distribute
 setenv VIRTUALENV_USE_DISTRIBUTE
@@ -42,7 +35,7 @@ if (-e ~/.alias) source ~/.alias
 setenv EDITOR vim
 setenv VISUAL vim
 setenv PAGER	less
-setenv LESS	"-egMX"
+setenv LESS	"-geRMX"
 
 if ($?prompt) then
     stty erase ^H
