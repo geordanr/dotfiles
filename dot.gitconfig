@@ -1,6 +1,6 @@
 [core]
     editor = /usr/bin/vim
-    pager = /usr/bin/less -R
+    pager = /usr/bin/less
 [user]
     name = Geordan Rosario
     email = geordan@doselab.com
@@ -17,5 +17,6 @@
     ci = commit
     co = checkout
     br = branch
+    gud = pull
 [push]
     default = tracking
