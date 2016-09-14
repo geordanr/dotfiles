@@ -19,7 +19,7 @@ set who = "Target %B%n%b %a %U%l%u from %m at %T"
 #limit coredumpsize 0
 
 #set prompt="%B%m%b [%n] <%T> %/%# "
-set prompt="%B%n@%m%b %T %~%# "
+set prompt="${green}%B%n@%m%b${end} %T ${cyan}%~${end}%B%#%b "
 set prompt3="You must have meant %B%R%b.  Right? (yep|nope|edit|auto)>"
 set autolist
 set histdup=erase
