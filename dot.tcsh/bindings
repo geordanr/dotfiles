@@ -4,3 +4,4 @@ bindkey -k down history-search-forward
 #bindkey "\e\t" complete-word-back
 bindkey "^G" kill-whole-line
 bindkey "^W" backward-delete-word
+bindkey "^R" i-search-back
