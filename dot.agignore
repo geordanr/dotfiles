@@ -1,0 +1,16 @@
+.git
+node_modules
+.sass-cache
+tmp
+
+*.deb
+*.dll
+*.exe
+*.gif
+*.o
+*.png
+*.pyc
+*.pyd
+*.pyo
+*.so
+.*.swp

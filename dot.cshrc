@@ -48,6 +48,7 @@ set path = (    ~/bin \
                  /usr/local/bin\
                  /usr/local/sbin \
                  /opt/intel/bin \
+                 /usr/local/node/bin \
                  /usr/local/go/bin \
                  $GOPATH/bin \
 )

@@ -6,7 +6,7 @@
 #alias wlog	'idle -m $idlelist'
 alias ls 'ls-F --color'
 
-alias tps 'source ~/venv/tps/bin/activate.csh'
+alias m3d_dev 'source ~/venv/mobius3d_dev/bin/activate.csh'
 alias mvim '(gvim>&/dev/null&)'
 alias rsdev 'rsync -avz -C --delete --exclude-from=.gitignore --exclude .git --exclude tmp --exclude dist .'
 alias m 'mosh \!:1 -- screen -dR'
